@@ -2,7 +2,7 @@ import streamlit as slt
 import pickle
 import pandas as pd
 import numpy as np
-from PIL import IMAGE
+from PIL import Image
 
 df_file=open("dataframe (1).pkl","rb")
 df=pickle.load(df_file)

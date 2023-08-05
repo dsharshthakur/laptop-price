@@ -16,7 +16,7 @@ slt.header("Search for the best Laptop!!")
 # BACKGROUND IMAGE 
 image = Image.open("bg.jpg")
 new_image = image.resize((1200, 350))
-st.image(new_image)
+slt.image(new_image)
 
 
 #brand name

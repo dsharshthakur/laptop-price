@@ -3,14 +3,14 @@ import pickle
 import pandas as pd
 import numpy as np
 
-file=open("dataframe (1).pkl","rb")
-df=pickle.load(file)
+df_file=open("dataframe (1).pkl","rb")
+df=pickle.load(df_file)
 df.drop("Price",axis=1,inplace=True)
 print(df.columns)
 
 #model
-file=open("model (1).pkl", "rb")
-model=pickle.load(file)
+model_file=open("model (1).pkl", "rb")
+model=pickle.load(model_file)
 slt.header("Search for the best Laptop!!")
 
 

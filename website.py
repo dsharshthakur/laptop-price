@@ -2,6 +2,7 @@ import streamlit as slt
 import pickle
 import pandas as pd
 import numpy as np
+from PIL import IMAGE
 
 df_file=open("dataframe (1).pkl","rb")
 df=pickle.load(df_file)
@@ -11,6 +12,11 @@ df.drop("Price",axis=1,inplace=True)
 model_file=open("model (1).pkl", "rb")
 model=pickle.load(model_file)
 slt.header("Search for the best Laptop!!")
+
+# BACKGROUND IMAGE 
+image = Image.open("bg.jpg)
+new_image = image.resize((1200, 350))
+st.image(new_image)
 
 
 #brand name

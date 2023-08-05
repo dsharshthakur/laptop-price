@@ -9,7 +9,7 @@ df.drop("Price",axis=1,inplace=True)
 print(df.columns)
 
 #model
-file=open("model (1).pkl", "rb")
+file=open("model.pkl", "rb")
 model=pickle.load(file)
 slt.header("Search for the best Laptop!!")
 

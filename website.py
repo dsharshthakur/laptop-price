@@ -6,7 +6,6 @@ import numpy as np
 df_file=open("dataframe (1).pkl","rb")
 df=pickle.load(df_file)
 df.drop("Price",axis=1,inplace=True)
-print(df.columns)
 
 #model
 model_file=open("model (1).pkl", "rb")
@@ -78,4 +77,4 @@ if predict_btn==True:
     prediction_without_log=np.exp(prediction)[0]
     slt.text("Price:")
     slt.subheader(round(prediction_without_log))
-print(df)
+

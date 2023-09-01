@@ -85,5 +85,5 @@ if predict_btn==True:
     slt.subheader("%i (approx.)"%(round(prediction_without_log)))
 
 #footer        
-footer="<h6 style='color:white;'>@created by HarshThakur<h6>"
+footer="<h6>@created by HarshThakur<h6>"
 slt.markdown(footer,unsafe_allow_html=True)

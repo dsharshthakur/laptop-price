@@ -84,3 +84,6 @@ if predict_btn==True:
     slt.text("Price:")
     slt.subheader("%i (approx.)"%(round(prediction_without_log)))
 
+#footer        
+footer="<h6 style='color:white;'>@created by HarshThakur<h6>"
+st.markdown(footer,unsafe_allow_html=True)

@@ -82,5 +82,5 @@ if predict_btn==True:
     prediction=model.predict(new_df)
     prediction_without_log=np.exp(prediction)[0]
     slt.text("Price:")
-    slt.subheader(round(prediction_without_log))
+    slt.subheader("%i (approx.)"%(round(prediction_without_log)))
 
